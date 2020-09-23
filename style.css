@@ -20,8 +20,10 @@ body{
 .cadastro{
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;   
+    /*justify-content: center;
+    align-items: center; */
+    justify-content: flex-start;
+    align-items: flex-start;  /*para funcionar no navegador mobile*/ 
 }
 
 .centro{
