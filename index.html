@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="area">
+        <div class="cadastro">
+            <div class="centro">
+                <div class="esquerdo">
+                    <img src="imgform.png" alt="">
+                </div>
+                <div class="direito">
+                    
+                    <form action="/post" 
+                    method="post" 
+                    class="formulario">
+                    <h1>Cadastro</h1>
+                    
+                    <div class="forminputs">
+                        
+                        <label for="idnome">
+                            Nome : 
+                            <input 
+                            type="text" 
+                            name="nome" 
+                            id="idnome"
+                            regras = "obrigatorio|min=3">
+                        </label>
+                        <label for="idemail">
+                            Email : 
+                            <input 
+                            type="text" 
+                            name="email" 
+                            id="idemail"
+                            regras = "email">
+                        </label>
+                        <label for="idsenha">
+                            Senha : 
+                            <input 
+                            type="password" 
+                            name="senha" 
+                            id="idsenha"
+                            regras = "obrigatorio|min=3"
+                            >
+                        </label>
+                    </div>
+                        <input type="submit" 
+                        value="Cadastrar" 
+                        id="btnsubmit">
+                        já tem uma conta ? <a href="">clique aqui</a>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
